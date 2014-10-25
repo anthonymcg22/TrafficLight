@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Traffic Lights</title>
+    <link href="CSS.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="centerDiv">
+        <div id="trafficLightDiv">
+            <div id="red" class="lights"></div>
+            <div id="yellow" class="lights"></div>
+            <div id="green" class="lights"></div>
+            <div id="greenArrow"><span class="fliph">
+                &#10140;
+                </span>
+            </div>
+            
+        </div>
+    </div>
+    <button onclick="changeLight('red')">RED</button>
+    <button onclick="changeLight('yellow')">YELLOW</button>
+    <button onclick="changeLight('green')">GREEN</button>
+    <button onclick="changeLight('greenArrow')">GREEN ARROW</button>
+    <h2>Hold down the space bar to rotate arrow!</h2>
+
+    <script src="main.js"></script>
+</body>
+</html>

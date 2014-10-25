@@ -1,0 +1,50 @@
+﻿body {
+}
+
+#centerDiv {
+    margin: 3% 25%;
+}
+
+#trafficLightDiv {
+    background-color: black;
+    width: 100px;
+    height: 250px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+}
+
+.lights {
+    width: 61px;
+    height: 61px;
+    border-radius: 100%;
+    margin: 16px 19px;
+    opacity: .32;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: #11c403;
+    display: none;
+}
+
+.fliph {
+    display: inline-block;
+    vertical-align: top;
+    transform: scaleX(-1); /* Or also:   rotateY(180deg) */
+    /*-ms-filter: fliph;*/
+    filter: fliph;
+}
+
+#greenArrow {
+    padding: 0 13px;
+    color: #11c403;
+    font-size: 5em;
+    margin: 0px auto;
+}
