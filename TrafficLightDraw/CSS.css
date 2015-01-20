@@ -1,23 +1,43 @@
 ﻿body {
+    background-color: lightblue;
 }
 
 #centerDiv {
-    margin: 3% 25%;
+    margin: 3% 15%;
+    width: 70%;
 }
-
-#trafficLightDiv {
+#buttons {
+    width: 100%;
+    margin: 3% auto;
+}
+#buttons button {
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    display:inline-block;
     background-color: black;
-    width: 100px;
-    height: 250px;
+    padding: 3%;
+    margin: 2%;
+    border-radius: 6px;
+}
+#redB { color: red;}
+#greenB {color: green;}
+#yellowB {color: yellow;}
+#greenArrowB {color: green;}
+#trafficLightDiv {
+    margin: 10% auto;
+    background-color: black;
+    width: 139px;
+    height: 350px;
     border: 2px solid yellow;
     border-radius: 6px;
 }
 
 .lights {
-    width: 61px;
-    height: 61px;
+    width: 86px;
+    height: 86px;
     border-radius: 100%;
-    margin: 16px 19px;
+    margin: 23px 26px;
     opacity: .32;
 }
 
@@ -31,20 +51,18 @@
 
 #green {
     background-color: #11c403;
-    display: none;
 }
 
 .fliph {
     display: inline-block;
     vertical-align: top;
-    transform: scaleX(-1); /* Or also:   rotateY(180deg) */
-    /*-ms-filter: fliph;*/
-    filter: fliph;
+    transform: scaleX(-1);
 }
 
 #greenArrow {
     padding: 0 13px;
     color: #11c403;
-    font-size: 5em;
-    margin: 0px auto;
+    font-size: 7em;
+    margin: -19px 3px;
+    display: none;
 }

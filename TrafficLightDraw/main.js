@@ -1,39 +1,11 @@
 ﻿"use strict";
 
-var HorizontalRotate = 1;
-var reachEnd = true;
-var interval;
-
-window.onkeypress = function (e) {
-
-    if (e.keyCode == 32) {
-        interval = window.setInterval(function () {
-            if (HorizontalRotate >= -1 && reachEnd === true)
-                HorizontalRotate += -.006;
-            else
-                reachEnd = false;
-
-            if (reachEnd === false && HorizontalRotate <= 1)
-                HorizontalRotate += .006;
-            else
-                reachEnd = true;
-
-            document.getElementsByClassName('fliph')[0].style.transform = 'scaleX(' + HorizontalRotate + ')';
-            document.getElementById("trafficLightDiv").style.transform = 'scaleY(' + HorizontalRotate + ')';
-        }, 20);
-    }
-};
-window.onkeyup = function () {
-    window.clearInterval(interval);
-};
-
-var trafficLightDiv = document.getElementById("trafficLightDiv");
 var lights = document.getElementsByClassName("lights");
 var changeLight = function (light) {
 
     if (light === "greenArrow") {
         document.getElementById("green").style.display = "none";
-        document.getElementById("greenArrow").style.display = "initial";
+        document.getElementById("greenArrow").style.display = "inline-block";
     }
     else {
         document.getElementById("green").style.display = "block";
